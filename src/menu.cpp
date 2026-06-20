@@ -5,8 +5,10 @@
 
 void Menu::show() {
 	int select = 0;
+    std::cout << "What would you like to do? \n";
 	for (std::string choice : options) {
-		std::cout << "[" << select + 1 << "]";
+        select += 1;
+		std::cout << "[" << select << "] ";
 		std::cout << choice << "\n"; 
 	};
 };
