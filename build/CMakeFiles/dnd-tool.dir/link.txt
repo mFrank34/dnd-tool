@@ -1,0 +1,1 @@
+/usr/lib64/ccache/c++ -Wl,--dependency-file=CMakeFiles/dnd-tool.dir/link.d "CMakeFiles/dnd-tool.dir/src/main.cpp.o" -o dnd-tool

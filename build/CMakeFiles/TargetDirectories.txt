@@ -1,0 +1,3 @@
+/home/frank/Projects/dnd-tool/build/CMakeFiles/dnd-tool.dir
+/home/frank/Projects/dnd-tool/build/CMakeFiles/edit_cache.dir
+/home/frank/Projects/dnd-tool/build/CMakeFiles/rebuild_cache.dir
