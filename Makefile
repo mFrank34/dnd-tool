@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -g -Wall -Wextra -Wpedantic
-OBJS = app.o menu.o
+OBJs = app.o menu.o
 
 .PHONY : all check 
 
@@ -15,5 +15,10 @@ app.o: src/app.cpp src/app.h
 menu.o: src/menu.cpp src/menu.h
 	$(CXX) $(CXXFLAGS) -c $<
 
+check: check
+
+check: tests/tests.cpp $(OBJs)
+	$(CXX) $(CXXFLAGS) -I tests/ -o check $^
+
 clean:
-	$(RM) *.o dnd-tool 
+	$(RM) *.o dnd-tool check 
